@@ -1,0 +1,6 @@
+import requests
+
+response = requests.get('http://ncov.dxy.cn/ncovh5/view/pneumonia')
+# print(response.content.decode())
+response.encoding = 'utf8'
+print(response.text)
